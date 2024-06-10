@@ -115,11 +115,7 @@ def main():
     if not st.session_state.thread_id:
         start_thread(client)
 
-    with st.sidebar:
-        st.title("다운로드 링크")
-        st.markdown("[1. 2024년도 결산 주요사업조서(2023년도 예산안-세출만 추출) 다운로드](https://drive.google.com/file/d/1TyKueueI2ZBGVqNkJCLq1RKIeUAXgFz8/view?usp=drive_link)")
-        st.markdown("[2. 제18대 경상남도교육감 자립공존의 경남혁신교육3기 백서 다운로드](https://drive.google.com/file/d/1zsKSPxAeF8KNTE9o3oNZ6qVHxHeCgAdn/view?usp=drive_link)")
-        
+    with st.sidebar:       
         # 질문 예시 섹션 추가
         if "show_examples" not in st.session_state:
             st.session_state.show_examples = True
